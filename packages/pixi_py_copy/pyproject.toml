@@ -5,7 +5,3 @@ authors = [{name = "Andre Medina", email = "AndreMedina@hotmail.com.au"}]
 readme="README.md"
 requires-python = ">= 3.11"
 version = "0.1.0"
-
-
-[tool.pixi.pypi-dependencies]
-pixi_py = { path = "packages/pixi_py/.", editable = true }

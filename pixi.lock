@@ -1081,7 +1081,7 @@ packages:
   name: pixi-py-copy
   version: 0.1.0
   path: packages/pixi_py_copy/.
-  sha256: 52a50e8c68037c5563951ba8479e2958a00940d923adae83a9866b1b71868df0
+  sha256: cda39020edacdc9b02ede7c65f78eedb8d0d0ae1a7c45fc96d9057be9ee33e2a
   requires_python: '>=3.11'
   editable: true
 - kind: conda
