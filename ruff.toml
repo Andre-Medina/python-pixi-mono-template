@@ -16,4 +16,5 @@ unfixable = ["F401"]
 convention = "numpy"
 
 [lint.per-file-ignores]
-"**/tests/*" = ["S101", "ARG001"]
+"**/tests/*" = ["S101", "ARG001", "PLR2004"]
+"**/experiments/*" = ["F401", "D103", "E722", "D101", "B018", "C409", "E501", "D102"]
