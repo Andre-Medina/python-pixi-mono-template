@@ -1,0 +1,30 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.6
+    hooks:
+      - id: ruff
+        args: [ --fix ]
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+
+  - repo: local
+    hooks:
+      - id: check-pixi-lockfile-uptodate
+        name: Check if pixi lockfile is up to date
+        description: This hook checks if the pixi lockfile is up to date
+        entry: pixi list --locked
+        language: system
+        stages: [pre-commit, pre-merge-commit, manual]
+        pass_filenames: false
+      - id: pytest-check
+        name: pytest-check
+        entry: pixi run tests
+        language: system
+        pass_filenames: false

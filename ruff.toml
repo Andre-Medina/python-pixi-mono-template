@@ -1,0 +1,19 @@
+line-length = 120
+target-version = "py39"
+
+[lint]
+select = ["I", "D", "UP", "S", "C4", "SIM", "B", "PL", "ARG", "E", "F"] #, "ANN", "RUF"
+ignore = [
+    "D100", # Missing docstring in public module
+    "D104", # Missing docstring in public package
+    "D200", # One-line docstring should fit on one line
+    "D401", # Non imperitive mood
+    "PLR0913", # Too many arguments
+]
+unfixable = ["F401"]
+
+[lint.pydocstyle]
+convention = "numpy"
+
+[lint.per-file-ignores]
+"**/tests/*" = ["S101", "ARG001"]
