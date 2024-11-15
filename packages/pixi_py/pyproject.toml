@@ -1,0 +1,7 @@
+[project]
+name = "pixi_py"
+description = "Add a short description here"
+authors = [{name = "Andre Medina", email = "AndreMedina@hotmail.com.au"}]
+readme="README.md"
+requires-python = ">= 3.11"
+version = "0.1.0"

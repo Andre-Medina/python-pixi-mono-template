@@ -1,0 +1,26 @@
+[project]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+name = "vision"
+
+[environments]
+dev = { features = ["dev"], solve-group = "default"}
+default = { features = ["dev"], solve-group = "default"}
+
+[pypi-dependencies]
+pixi_py = { path = "packages/pixi_py/.", editable = true }
+
+[feature.dev.pypi-dependencies]
+pixi_py_copy = { path = "packages/pixi_py_copy/.", editable = true }
+
+[tasks]
+tests = "pytest -v packages/pixi_py/tests"
+
+[feature.dev.tasks]
+test_all = "pytest -v packages"
+
+[dependencies]
+rich = ">=13.9.3,<14"
+pytest = "*"
+pre-commit = ">=4.0.1,<5"
+ipykernel = ">=6.29.5,<7"
