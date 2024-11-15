@@ -90,8 +90,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/yaml-0.2.5-h7f98852_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zeromq-4.3.5-h3b0a872_7.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-3.21.0-pyhd8ed1ab_0.conda
-      - pypi: packages/pixi_py/.
-      - pypi: packages/pixi_py_copy/.
+      - pypi: packages/pixi_py
+      - pypi: packages/pixi_py_copy
   dev:
     channels:
     - url: https://conda.anaconda.org/conda-forge/
@@ -182,8 +182,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/yaml-0.2.5-h7f98852_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zeromq-4.3.5-h3b0a872_7.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-3.21.0-pyhd8ed1ab_0.conda
-      - pypi: packages/pixi_py/.
-      - pypi: packages/pixi_py_copy/.
+      - pypi: packages/pixi_py
+      - pypi: packages/pixi_py_copy
 packages:
 - kind: conda
   name: _libgcc_mutex
@@ -1073,15 +1073,15 @@ packages:
 - kind: pypi
   name: pixi-py
   version: 0.1.0
-  path: packages/pixi_py/.
-  sha256: 151a8be54ef07cf311950c765d81dd1b43600a29ba4ea4aa7cb08d10325302ab
+  path: packages/pixi_py
+  sha256: 9e6187b26d2f2b4577b21e4ff228130925df193a9462b2a4514b92cfd9cd01af
   requires_python: '>=3.11'
   editable: true
 - kind: pypi
   name: pixi-py-copy
   version: 0.1.0
-  path: packages/pixi_py_copy/.
-  sha256: cda39020edacdc9b02ede7c65f78eedb8d0d0ae1a7c45fc96d9057be9ee33e2a
+  path: packages/pixi_py_copy
+  sha256: 8f20947e51957c358c606da97852e65fe2e5e95acea924d686842053a51a8247
   requires_python: '>=3.11'
   editable: true
 - kind: conda
